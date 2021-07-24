@@ -1,5 +1,5 @@
-import { Component, ElementRef,ViewChild } from '@angular/core';
-import { MatDialog,MatDialogConfig } from '@angular/material/dialog';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { SigninComponent } from './components/signin/signin.component';
 import { data } from './data';
 import { Post } from './Post';
@@ -11,24 +11,40 @@ import { groups } from './groups';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild('navigation') navigation!:ElementRef;
-  follow:string = "Follow"
-  constructor(private dialog:MatDialog){
-  } 
-  data:Post[] = data;
+  @ViewChild('navigation') navigation!: ElementRef;
+  follow: string = "Follow"
+  constructor(private dialog: MatDialog) {
+  }
+  data: Post[] = data;
   groups: Group[] = groups;
   title = 'frontend-task1';
-  showsignin(){this.signin();
+  showsignin() {
+    this.signin();
     const diagRef = new MatDialogConfig()
     diagRef.position = {
       'bottom': '0',
       'left': '0'
     }
-    diagRef.minWidth="100%";
-    this.dialog.open(SigninComponent,diagRef);
+    diagRef.minWidth = "100%";
+    this.dialog.open(SigninComponent, diagRef);
   }
-  signin(){
+  signin() {
     console.log(this.navigation)
   }
-  
+
+  followed(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      if (element.classList.contains("followactive")) {
+        element.classList.remove("followactive");
+        element.innerText="Follow"
+      }
+      else {
+        element.classList.add("followactive");
+        element.innerText = "Followed";
+      }
+
+    }
+  }
+
 }

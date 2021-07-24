@@ -1,5 +1,5 @@
 .groups {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url("../images/i2.jpg");
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://s3.ap-south-1.amazonaws.com/atg-storage-s3/assets/Backend/img/group_img/cover/Computer.jpg");
     min-height: 300px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,12 +155,9 @@
 }
 
 .followactive {
-    position: absolute;
-    width: 73px;
+    width: 73px !important;
     height: 24px;
-    left: 1162px;
-    top: 391px;
-    color: white;
-    background: #000000;
+    color: #fff !important;
+    background: #000000 !important;
     border-radius: 14px;
 }

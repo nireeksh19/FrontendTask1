@@ -44,7 +44,7 @@
                     <div class="other-heading ">RECOMMENDED GROUPS</div>
                     <div *ngFor="let i of groups" class="other-group "><img class="float-start" [src]="i.image">
                         <span class="float-start ">{{i.title}}</span>
-                        <button style="background-color: #EDEEF0;" class="btn btn-secondary p-0 float-end ">Follow</button>
+                        <button (click)="followed(i.id)" style="background-color: #EDEEF0;" [id]="i.id" class="btn btn-secondary p-0 float-end "> Follow </button>
                     </div>
                     <div class="col-11 mt-5 " style="height:35px; ">
                         <a class="float-end " style="line-height: 35px;text-decoration: none; " href=" # ">See More...</a>
