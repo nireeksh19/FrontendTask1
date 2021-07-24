@@ -1,0 +1,18 @@
+<nav class="navbar nav-head">
+    <a class="navbar-brand" href="#">
+        <img src="images/logo.png" style="max-width: 172px;" alt="">
+    </a>
+    <div class="nav-item ">
+        <div class="input-group input-group-lg search-bar">
+            <span class="input-group-text border-0" style="background-color: #f2f2f2; height: 42px;" id="basic-addon2"><i  style="background-color: #f2f2f2;color:#7A7A7A;" class="fa fa-search"></i></span>
+            <input type="text" class="search-input" placeholder="Search for your favorite groups in ATG" name="search" id="">
+        </div>
+    </div>
+    <div (clickOutside)="hide()">
+        <span *ngIf="!loggedin" class=" nav-item float-end ">Create an Account
+            <button  style="color:#2F6CE5; " (click)="show() "> Its Free! <i style="color:black; " class="fa fa-caret-down "></i></button></span>
+        <div *ngIf="drop " class="dropdown " style="background: #FFFFFF; ">
+            <button (click)="opensigup() " class="login ">LogIn/SignUp</button>
+        </div>
+    </div>
+</nav>

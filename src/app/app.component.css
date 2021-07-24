@@ -1,0 +1,166 @@
+.groups {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url("../images/i2.jpg");
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+}
+
+.posts {
+    padding: 0;
+    max-width: 692px;
+    padding-left: 13.88%;
+    padding-right: 7%;
+    min-width: 69%;
+}
+
+.location {
+    padding: 10px 0;
+}
+
+.location * {
+    background-color: #ffffff;
+    border: 0;
+    outline: 0;
+}
+
+.othergroups {
+    padding-top: 100px;
+    width: 240px;
+}
+
+.other-heading {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    padding-bottom: 00px;
+    padding-left: 5px;
+}
+
+.other-group {
+    min-height: 40px;
+    padding: 25px 0;
+}
+
+.other-group img {
+    width: 37px;
+    height: 37px;
+    border-radius: 100%;
+}
+
+.other-group span {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.other-group button {
+    color: black;
+    border-radius: 14px;
+    width: 60px;
+    height: 24px;
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.location input {
+    width: 230px;
+}
+
+.group-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 47px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 30%;
+    left: 14%;
+    background-color: transparent;
+}
+
+.group-des {
+    position: absolute;
+    bottom: 22.5%;
+    left: 14%;
+    background-color: transparent;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 23px;
+}
+
+.join {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+}
+
+@media only screen and (max-width: 576px) {
+    .posts {
+        padding: 0;
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) and (min-width :577px) {
+    .posts {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        float: none !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .posts {
+        padding-left: 10%;
+        padding-right: 4%;
+    }
+    .location input {
+        width: 160px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width :768px) {
+    .posts {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        float: none !important;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .groups {
+        min-height: 236px;
+        height: 236px;
+    }
+    .group-title {
+        left: 4.4%;
+        bottom: 13.8%;
+        font-size: 30px;
+    }
+    .group-des {
+        left: 4.4%;
+        bottom: 7%;
+        font-size: 12px;
+    }
+}
+
+.nav-small span {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+}
+
+.followactive {
+    position: absolute;
+    width: 73px;
+    height: 24px;
+    left: 1162px;
+    top: 391px;
+    color: white;
+    background: #000000;
+    border-radius: 14px;
+}

@@ -1,0 +1,30 @@
+<div class="main float-start position-relative">
+    <button (click)="closediag()" class=" float-end close "><i class="fa fa-window-close "></i></button>
+    <div class="col-12 top-info ">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</div>
+    <div class="content ">
+        <div class="title ">
+            <p class="create float-start ">
+                {{ title }}
+            </p>
+            <div class="createAccount float-end ">
+                <button class="float-end signinorSignup " id="signinorSignup " (click)="signinorSignup() " #signInorSignUp>Sign In</button>
+                <p class="float-end " #createAccount>Already have an Account?</p>
+            </div>
+        </div>
+        <div class=" left display-block float-start ">
+            <input type="text " class="float-start w-50 " placeholder="First Name " name=" fname " id="fname " #fname>
+            <input type="text " class="float-start w-50 " placeholder="Last Name " name=" lname " id="lname " #lname>
+            <input type="email " class="w-100 " placeholder="Email " name="email " id="email " #email>
+            <input type="password " class="w-100 " placeholder="Password " name="password " id="password " #password>
+            <input type="password " class="w-100 " placeholder="Confirm Password " name="cpassword " id="cpassword " #cpassword>
+            <button class="submit " id="submit " #submit>{{msg}}</button>
+            <button class="facebooklogin " id="facebooklogin " #facebook><img style="height:20px; " src="https://img.icons8.com/fluent/48/000000/facebook-new.png " alt=" ">  {{msg}} With Facebook</button>
+            <button class="googlelogin " id="googlelogin " #google><img style="height:20px; " src="https://img.icons8.com/color/48/000000/google-logo.png "/> {{msg}} With Google</button>
+            <button class="forgot-password " id="forgot-password " #forgot>Forgot Password?</button>
+        </div>
+        <div class="right ">
+            <img src="images/login.png " alt=" ">
+            <p class="terms " #terms>By signing up, you agree to our Terms & conditions, Privacy policy</p>
+        </div>
+    </div>
+</div>

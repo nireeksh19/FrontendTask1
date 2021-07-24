@@ -1,0 +1,47 @@
+<div class="col-12 clearfix h-auto p-0 float-sm-none float-md-none post-container">
+    <div *ngIf="post.image" class=" post-image ">
+        <img class="w-100 " [src]="post.image" alt=" "></div>
+    <div class="post-content ">
+        <div class="post-type ">{{ post.type }}</div>
+        <div class="post-title clearfix d-block">
+            <div class=" ">
+                <div class="col-11 h-100 float-start ">
+                    {{post.title}}
+                </div>
+                <div class="col-1 h-100 float-start position-relative " (clickOutside)=" onClickedOutside($event) ">
+                    <button class="more " (click)="showMore() "><i class="fa fa-ellipsis-h "></i></button>
+                    <div class="moreOptions " *ngIf="showMoreOptions " #moreOptions>
+                        <button>Edit</button>
+                        <button>Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="post.discription " class=" post-discription clearfix d-block float-none text-truncate ">
+            {{post.discription}}
+        </div>
+        <div class="post-detail ">
+            <div *ngIf="post.date " class="col-6 float-start p-1 " style="height: 30px; "><span class="fa fa-calendar "></span> {{post.date}}</div>
+            <div *ngIf="post.job " class=" col-6 float-start p-1 text-truncate " style="height: 30px; "><span class="fa fa-suitcase "></span> {{post.job}}</div>
+
+            <div *ngIf="post.location " class="col-6 float-start p-1 " style="height: 30px; "><span class="fa fa-map-marker "></span> {{ post.location }}</div>
+        </div>
+        <div *ngIf="post.buttonString " class="col-12 "><button type="button " class="btn btn-outline-primary w-100 ">{{post.buttonString}}</button></div>
+        <div class="post-footer ">
+            <div class="col-1 col-sm-1 col-lg-1 col-md-1 image float-start ">
+                <img [src]="post.profile " alt=" ">
+            </div>
+
+            <div class="col-md-8 col-8 float-start " style="background-color: transparent; ">
+                <div class="col-7 float-start h-100 name ">
+                    {{post.author}}
+                </div>
+                <div class="col-3 float-end h-100 likes ">
+                    <span class="fa fa-eye "></span> {{post.likes}}
+                </div>
+            </div>
+            <div class=" col-md-1 col-1 float-end h-100 share "><button class="float-end "><i class="fa fa-share-alt "></i><span>  Share</span> </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,265 @@
+@media only screen and (min-width: 576px) {
+    .post-container {
+        font-family: IBM Plex Sans;
+        overflow: hidden;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+    }
+}
+
+.moreOptions {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 160px;
+    height: 85px;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.16), 0px 0px 2px rgba(0, 0, 0, 0.08);
+    z-index: 99;
+    border-radius: 4px;
+}
+
+.more {
+    border: 0;
+    border-radius: 4px;
+    position: absolute;
+    right: 0;
+}
+
+.show {
+    display: block;
+}
+
+.more:hover {
+    background: #eee;
+}
+
+.more:focus {
+    background: #BFC0C0;
+}
+
+.moreOptions button {
+    background-color: white;
+    padding: 7px;
+    border: 0;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.moreOptions button:hover {
+    background-color: #eee;
+}
+
+.post-image img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.post-type {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    height: 23px;
+    line-height: 23px;
+    padding: 0;
+}
+
+.post-content {
+    padding: 20px 20px;
+}
+
+.post-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 134.17%;
+    padding: 10px 0;
+    min-height: 35px;
+}
+
+.post-discription {
+    font-family: IBM Plex Sans;
+    font-size: 19px;
+    line-height: 134.17%;
+    color: #5C5C5C;
+    height: 25px;
+}
+
+.post-footer {
+    height: 80px;
+    padding-top: 25px;
+    line-height: 48px;
+    vertical-align: middle;
+}
+
+.post-footer img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.image {
+    min-width: 48px;
+}
+
+.post-footer .name {
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.post-footer .share span {
+    display: none;
+}
+
+.post-footer .likes {
+    color: #525252;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+    right: -100px;
+    background-color: transparent;
+}
+
+.post-footer button {
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    border: 0;
+    background: #EDEEF0;
+    border-radius: 2px;
+}
+
+.post-footer button:hover {
+    background-color: #edeef0cb;
+}
+
+@media only screen and (max-width: 576px) {
+    .post-container {
+        font-family: IBM Plex Sans;
+        overflow: hidden;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+        font-style: normal;
+        margin-top: 6px;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    }
+    .post-image img {
+        max-height: 120px;
+        border-radius: 4px 4px 0px 0px;
+    }
+    .post-content {
+        padding: 16px;
+    }
+    .post-type {
+        line-height: 18px;
+        font-size: 14px;
+    }
+    .post-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        max-height: 62px;
+        min-height: 30px;
+    }
+    .post-discription {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .post-footer {
+        height: 47px;
+        line-height: 30px;
+        padding-top: 10px;
+    }
+    .post-footer .image {
+        min-width: 37px;
+        width: 37px;
+    }
+    .post-footer img {
+        width: 37px;
+        height: 37px;
+        min-width: 37px;
+        position: relative;
+    }
+    .post-footer .name {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 25px;
+        vertical-align: middle;
+        padding-left: 16px;
+    }
+    .post-footer .likes {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        padding-top: 15px;
+        vertical-align: baseline;
+        padding-left: 15px;
+        position: absolute;
+        left: 55px;
+        background-color: transparent;
+    }
+    .post-footer .likes span {
+        display: none;
+    }
+    .post-footer .share {
+        width: 65px;
+        height: 36px;
+        border-radius: 4px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .post-footer .share button {
+        width: 100%;
+        background: #F1F3F5;
+        height: 100%;
+    }
+    .post-footer .share span {
+        display: inline;
+        background-color: transparent;
+    }
+    .moreOptions {
+        width: 125px;
+        height: auto;
+        top: 25px;
+    }
+    .post-detail {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+i {
+    background-color: transparent;
+}
+
+.post-container {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0;
+    height: auto;
+}
+
+@media only screen and (min-width:769px) and (max-width:1250px) {
+    .post-footer .name {
+        padding-left: 25px;
+    }
+    .post-footer .likes {
+        right: -60px;
+    }
+}
+
+.location {
+    padding-top: 70px;
+}
+
+.post-detail {
+    font-size: 15px;
+    line-height: 19px;
+}
