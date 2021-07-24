@@ -11,10 +11,20 @@ export class PostComponent implements OnInit {
   showMoreOptions: boolean = false;
 
   @Input() post !: Post ;
+  icon!: string;
 
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit(): void {
+    switch(this.post.type)
+    {
+      case "Article": this.icon="✍️";break;
+      case "Education": this.icon="🔬";break;
+      case "Meetup": this.icon="📅";break;
+      case "Job": this.icon="💼";break;
+    }
   }
 
   showMore(){
